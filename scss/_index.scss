@@ -1,0 +1,41 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: $white;
+	ul {
+		list-style-type: none;
+
+	}
+	div {
+		border: red thin solid;
+	}
+}
+
+header {
+	background-color: $gray;
+	
+	.navbar {
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			color: $fontcolor;
+		}
+	}
+	
+}
+
+#contact {
+	.contact-details {
+		display: flex;
+		flex-wrap: wrap;
+
+		.email {
+			flex: 1 0 auto;
+		}
+		.phone {
+			flex: 1 0 auto;
+		}
+	}
+}
