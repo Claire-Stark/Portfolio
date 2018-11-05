@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Muli:300i,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
-<body>
+<body id="index">
 	<header>
 		<div class="navbar">
 			<ul class="nav justify-content-center">
@@ -18,22 +18,49 @@
 		</div>
 		
 	</header>
-
-	<section id="about">
+	<section id="portfolio">
 		<div class="container">
-			<div class="about-text">
-				<h2>Claire Stark</h2>
-				<p></p>
+			<h3>Claire Stark</h3>
+			<h4>Web Design Portfolio</h4>
+			<div class="row">
+
+				<div class="portfolio-item great-barrier">
+					<h4>Great Barrier Reef</h4>
+					<!-- <div class="modal" tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title">Great Barrier Reef</h5>
+					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          			<span aria-hidden="true">&times;</span>
+					        		</button>
+					      		</div>
+					      	<div class="modal-body">
+					        	<p>This was a project we worked on whilst learning D3 and SVG.</p>
+					        	<p>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</p>
+					      	</div>
+					      	 <div class="modal-footer">
+        						<button type="button" class="btn btn-link"><a href="#">Go to site</a></button>
+      						</div>
+					    </div>
+					</div> -->
+				</div>
+				<div class="portfolio-item body-arts">
+					<h4>NZBAA</h4>
+				</div>
+				<div class="portfolio-item">
+					
+				</div>
+				
 			</div>
 		</div>
 		
 	</section>
-
-	<section id="portfolio">
+	<section id="about">
 		<div class="container">
-			<div class="row">
-				<h2>Portfolio</h2>
-				<div class="col-sm-12 col-md-4"></div>
+			<div class="about-text">
+				<h3>About</h3>
+				<p>I am a budding young web designer, who is ready to take on the world!</p>
 			</div>
 		</div>
 		
@@ -41,9 +68,9 @@
 
 	<section id="contact">
 		<div class="container">
-			<div class="row">
-				<h2>Contact</h2>
-				<div class="contact-details col-md-6">
+			<h2>Contact</h2>
+			<div class="row col-12">
+				<div class="contact-details col-6">
 					<div class="email">
 						<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i>Email: claireu@ymail.com</a>
 					</div>
@@ -58,21 +85,21 @@
 
 	<footer>
 		<div class="row">
-			<div class="navbar col-md-6">
+			<div class="navbar col-6">
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a href="#" class="active" data-to="#about">About</a>
+					<a href="#" class="nav-link active" data-to="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" data-to="#portfolio">Portfolio</a>
+					<a href="#" class="nav-link" data-to="#portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" data-to="#contact">Contact</a>
+					<a href="#" class="nav-link" data-to="#contact">Contact</a>
 				</li>
 			</ul>
 		</div>
 
-		<div class="social col-md-6">
+		<div class="social col-6">
 			<div class="linkedin">
 				<a href="www.linkedin.com/in/claire-stark-5449a4b3"><i class="fab fa-linkedin"></i></a>
 			</div>
