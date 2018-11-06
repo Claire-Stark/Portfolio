@@ -5,15 +5,16 @@
 	<title>Claire Stark</title>
 </head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Muli:300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Lora:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 <body id="index">
 	<header>
-		<div class="navbar">
+		<div class="navbar fixed">
 			<ul class="nav justify-content-center">
-				<li class="nav-item"><a href="#" class="nav-link active" data-to="#about">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-to="#portfolio">Portfolio</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-to="#contact">Contact</a></li>
+				<li class="nav-item"><a href="#" class="nav-link active" data-toggle="#about">About</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" data-toggle="#portfolio">Portfolio</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" data-toggle="#contact">Contact</a></li>
 			</ul>
 		</div>
 		
@@ -21,46 +22,95 @@
 	<section id="portfolio">
 		<div class="container">
 			<h3>Claire Stark</h3>
-			<h4>Web Design Portfolio</h4>
+			<div class="portfolio-header">
+				<h4>Web Design Portfolio</h4>
+			</div>
 			<div class="row">
 
-				<div class="portfolio-item great-barrier">
-					<h4>Great Barrier Reef</h4>
-					<!-- <div class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-					    	<div class="modal-content">
-					      		<div class="modal-header">
-					        		<h5 class="modal-title">Great Barrier Reef</h5>
-					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          			<span aria-hidden="true">&times;</span>
-					        		</button>
-					      		</div>
-					      	<div class="modal-body">
-					        	<p>This was a project we worked on whilst learning D3 and SVG.</p>
-					        	<p>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</p>
-					      	</div>
-					      	 <div class="modal-footer">
-        						<button type="button" class="btn btn-link"><a href="#">Go to site</a></button>
-      						</div>
-					    </div>
-					</div> -->
-				</div>
-				<div class="portfolio-item body-arts">
-					<h4>NZBAA</h4>
-				</div>
-				<div class="portfolio-item">
-					
+				<div class="portfolio-item great-barrier col-4">
+					<h4><a href="#" data-toggle="modal" data-target="#great-barrier-modal">Great Barrier Reef</a></h4>
+						<div class="modal" id="great-barrier-modal" tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+						      		<div class="modal-header">
+						        		<h5 class="modal-title">Great Barrier Reef</h5>
+						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          			<span aria-hidden="true">&times;</span>
+						        		</button>
+						      		</div>
+						      	<div class="modal-body">
+						        	<p>This was a project we worked on whilst learning D3 and SVG.</p>
+						        	<p>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</p>
+						      	</div>
+						      	<div class="modal-footer">
+	        						<button type="button" class="btn btn-link"><a href="#">Go to site</a></button>
+	        					</div>
+	      						</div>
+						    </div>
+						</div>
 				</div>
 				
+				<div class="portfolio-item body-arts col-4">
+					<h4><a href="#" data-toggle="modal" data-target="#bodyarts-modal">NZBAA</a></h4>
+					<div class="modal" id="bodyarts-modal" tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+						      		<div class="modal-header">
+						        		<h5 class="modal-title">NZ Body Art Awards</h5>
+						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          			<span aria-hidden="true">&times;</span>
+						        		</button>
+						      		</div>
+						      	<div class="modal-body">
+						        	<p>This was a project we worked on whilst learning parallaxing and continuous scrolling.</p>
+						        	<p>I chose to use the NZBAA as my content for this project as I have participated in the awards several times, and also the images made great content.</p>
+						      	</div>
+						      	 <div class="modal-footer">
+	        						<button type="button" class="btn btn-link"><a href="#">Go to site</a></button>
+	        					</div>
+	      						</div>
+						    </div>
+					</div>
+				</div>
+
+				<div class="portfolio-item behance-project col-4">
+					<h4><a href="#" data-toggle="modal" data-target="#behance-modal">Behance</a></h4>
+					<div class="modal" id="behance-modal" tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+						      		<div class="modal-header">
+						        		<h5 class="modal-title">Behance</h5>
+						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          			<span aria-hidden="true">&times;</span>
+						        		</button>
+						      		</div>
+						      	<div class="modal-body">
+						        	<p>This was a group project that I worked on with 2 other class mates. We each created our own pages, and also worked as a team to create a section each for the landing page.</p>
+						        	<p>I created my own Behance account to pull the images from, as I couldn't find any that I really like everything that was on others pages.</p>
+						      	</div>
+						      	 <div class="modal-footer">
+	        						<button type="button" class="btn btn-link"><a href="#">Go to site</a></button>
+	      						</div>
+						    </div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
 	</section>
 	<section id="about">
 		<div class="container">
+			<div class="about-header">
+				<h4>About</h4>
+			</div>
 			<div class="about-text">
-				<h3>About</h3>
-				<p>I am a budding young web designer, who is ready to take on the world!</p>
+				<p>Hi there, I am Claire.</p>
+
+				<p>I am a budding young web designer, who is currently studying a Diploma in Web & UX Design at YooBee School of Design. I am due to graduate in December 2018, so will be available for any work available before Christmas.</p>
+
+				<p>I have been in the administration industry for the past 10 years and decided that I needed something that was more challenging and to go into an industry where I would be constantly learning.</p>
+
+				<p>Some of my hobbies include hanging out with friends, cooking (I'm a pretty good cook!), gaming with my husband, and a hobby I don't get to do enough, but I love so much, is SCUBA diving. It's absolutely amazing to be able to witness the beauty that is below the oceans waves.</p>
 			</div>
 		</div>
 		
@@ -68,14 +118,17 @@
 
 	<section id="contact">
 		<div class="container">
-			<h2>Contact</h2>
+			<div class="contact-header">
+				<h4>Contact</h4>
+			</div>
 			<div class="row col-12">
-				<div class="contact-details col-6">
+				<p>You can download my CV <a href="css/images/CLaire-Stark-CV.pdf"><strong>here</strong></a> to view my previous experience</p>
+				<div class="contact-details col-12">
 					<div class="email">
-						<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i>Email: claireu@ymail.com</a>
+						<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i> Email: claireu@ymail.com</a>
 					</div>
 					<div class="phone">
-						<a href="tel:+64212406888"><i class="fas fa-phone-square"></i>Phone: 0212406888</a>
+						<a href="tel:+64212406888"><i class="fas fa-phone-square"></i> Phone: 0212406888</a>
 					</div>
 				</div>
 			</div>
@@ -86,33 +139,33 @@
 	<footer>
 		<div class="row">
 			<div class="navbar col-6">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a href="#" class="nav-link active" data-to="#about">About</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link" data-to="#portfolio">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link" data-to="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a href="#" class="nav-link active" data-to="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-to="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-to="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 
-		<div class="social col-6">
-			<div class="linkedin">
-				<a href="www.linkedin.com/in/claire-stark-5449a4b3"><i class="fab fa-linkedin"></i></a>
+			<div class="social col-6">
+				<div class="linkedin">
+					<a href="www.linkedin.com/in/claire-stark-5449a4b3"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/CrimsonGracie"><i class="fab fa-github-square"></i></a>
+				</div>
+				<div class="email">
+					<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i></a>
+				</div>
+				<div class="phone">
+					<a href="tel:+64212406888"><i class="fas fa-phone-square"></i></a>
+				</div>
 			</div>
-			<div class="github">
-				<a href="https://github.com/CrimsonGracie"><i class="fab fa-github-square"></i></a>
-			</div>
-			<div class="email">
-				<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i></a>
-			</div>
-			<div class="phone">
-				<a href="tel:+64212406888"><i class="fas fa-phone-square"></i></a>
-			</div>
-		</div>
 		</div>
 		
 	</footer>

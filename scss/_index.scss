@@ -1,7 +1,7 @@
 #index {
 	width: 100vw;
 	height: 100vh;
-	background-color: $white;
+	background-color: $backgroundcolor;
 	text-align: center;
 	flex-direction: column;
 
@@ -10,25 +10,39 @@
 
 	}
 	div {
-		border: red thin solid;
+		padding-top: 1em;
+	}
+	h1,h2,h3 {
+		font-family: $headerfont;
+	}
+	h4,h5, {
+		font-family: $bodyfont;
+		font-style: italic;
+	}
+	p {
+		font-family: $bodyfont;
 	}
 }
 
 header {
-	background-color: $gray;
+	background-color: $divbackgroundcolor;
 	margin: auto;
-	
+
 	.navbar {
 		margin: auto;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		a {
-			color: $fontcolor;
+			color: $bodyfontcolor;
 		}
 		a:hover{
-			color:$white;
+			color:$headerfontcolor;
 		}
+	}
+
+	.nav-item {
+		margin: auto;
 	}
 	
 }
@@ -36,62 +50,138 @@ header {
 #portfolio {
 	text-align: center;
 
+	.portfolio-header {
+		border-bottom: thick $divbackgroundcolor solid;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.portfolio-item {
+		border: thick $bodyfontcolor solid;
+		box-sizing: border-box;
+	}
+
+	.portfolio-item:hover {
+		border: thick $divbackgroundcolor solid;
+		box-sizing: border-box;
+	}
+
 	.great-barrier {
+		flex: 0 0 auto;
 		background-image: url('../images/great-barrier.jpg');
 		background-size: cover;
 		background-position: center;
 		height: 15em;
 		width: 15em;
 
-		h4 {
-			color: $white;
+		h4 a{
+			color: $headerfontcolor;
+			text-decoration: none;
 		}
+
 	}
 	.body-arts {
+		flex: 1 0 auto;
 		background-image: url('../images/Creature2.jpg');
 		background-size: cover;
 		background-position: center;
 		height: 15em;
 		width: 15em;
 
-		h4 {
-			color: $white;
+		h4 a{
+			color: $headerfontcolor;
+			text-decoration: none;
+		}
+	}
+
+	.behance-project {
+		flex: 0 0 auto;
+		background-image: url('../images/behance.jpg');
+		background-size: cover;
+		background-position: center;
+		height: 15em;
+		width: 15em;
+
+		h4 a{
+			color: $headerfontcolor;
+			text-decoration: none;
+		}
+	}
+
+	.modal {
+		border: #bf9be2 thin solid;
+
+		.modal-title h5{
+			color: $headerfontcolor;
+			text-align: center;
 		}
 	}
 }
 
+#about {
+	.about-header {
+		border-bottom: thick $divbackgroundcolor solid;
+	}
+}
 #contact {
 	text-align: center;
-	// height: 50vh;
+
 	
+	.contact-header {
+		border-bottom: thick $divbackgroundcolor solid;
+	}
+
+	.row {
+		p {
+			text-align: center;
+		}
+		a {
+			color: $bodyfontcolor;
+		}
+		a:hover {
+			color: $headerfontcolor;
+		}
+	}
 
 	.contact-details {
-		display: flex;
-		// justify-content: space-between;
+		
+
+		a {
+			color: $bodyfontcolor;
+			text-align: center;
+		}
+		a:hover {
+				color: $headerfontcolor;
+		}
 
 		.email {
-			flex: 1 0 auto;
+			padding-top: 0;
+			
 		}
 		.phone {
-			flex: 1 0 auto;
+			padding-bottom: 1em;
 		}
 	}
 }
 
 footer {
 	box-sizing: border-box;
-	background-color: $gray;
+	background-color: $divbackgroundcolor;
+
 
 	i {
 		font-size: 1.5em;
 	}
 
 	a{
-		color: $fontcolor;
+		color: $bodyfontcolor;
 		text-decoration: none;
 	}
 	a:hover{
-			color:$white;
+			color:$headerfontcolor;
 	}
 	.navbar {
 		display: flex;
@@ -105,7 +195,11 @@ footer {
 	
 	.social{
 		display: flex;
-		// justify-content: space-between;
+		justify-content: space-around;
 		box-sizing: border-box;
+		padding-top: 0;
+		padding-bottom: 1em;
+		text-align: center;
+
 	}
 }
