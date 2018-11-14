@@ -33,35 +33,36 @@ $(function(){
 
         if(iScrollTop >= offset1 && iScrollTop<offset2){
 
-            activeLi = $('.nav>li:nth-child(1)');
+            activeLi = $('.navbar>li:nth-child(1)');
 
         }
 
         if(iScrollTop >= offset2 && iScrollTop<offset3){
 
-            activeLi = $('.nav>li:nth-child(2)');
+            activeLi = $('.navbar>li:nth-child(2)');
 
         }
 
         if(iScrollTop >= offset3 && iScrollTop<offset4){
 
-            activeLi = $('.nav>li:nth-child(3)');
+            activeLi = $('.navbar>li:nth-child(3)');
 
         }
 
-        activeLi.addClass('active');
+        // activeLi.addClass('active');
 
-        $('.nav>li').not(activeLi).removeClass('active');
+        // $('.navbar>li').not(activeLi).removeClass('active');
 
     });
 
-    $('[data-to]').on('click',function(e){  
-        e.preventDefault();
+    // $('[data-to]').on('click',function(e){  
+    //     e.preventDefault();
 
-        var sTarget = $(this).data('to');
+    //     var sTarget = $(this).data('to');
 
-        var targetOffsetTop = $(sTarget).offset().top;
+    //     var targetOffsetTop = $(sTarget).offset().top;
 
-        $('html,body').animate({scrollTop:targetOffsetTop},1000);  
-    });
+    //     $('html,body').animate({scrollTop:targetOffsetTop},1000);  
+    // });
 });
+

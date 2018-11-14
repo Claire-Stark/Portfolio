@@ -5,96 +5,126 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Claire Stark</title>
 </head>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Lora:400,400i" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="css/owl.carousel.css">
+  	<link rel="stylesheet" href="css/owl.theme.css">
+  	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/styles.css">
+
 <body id="index">
 	<header>
-		<div class="navbar fixed">
-			<ul class="nav justify-content-center">
-				<li class="nav-item"><a href="#about" class="nav-link active" data-to="#about">About</a></li>
-				<li class="nav-item"><a href="#portfolio" class="nav-link" data-to="#portfolio">Portfolio</a></li>
-				<li class="nav-item"><a href="#contact" class="nav-link" data-to="#contact">Contact</a></li>
-			</ul>
-		</div>
-		
+
+		<nav class="navbar navbar-toggleable-sm navbar-light bg-black">
+	      <div class="container">
+	        <!-- <a class="navbar-brand" href="#contact" data-to="#contact"><i class="far fa-gem"></i>Claire Stark</a> -->
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4" aria-expanded="false" aria-label="Toggle navigation">
+	          <i class="fa fa-bars"></i>
+	        </button>
+	        <div class="collapse navbar-collapse justify-content-end" id="navbar4">
+	          <ul class="navbar-nav">
+	            <li class="nav-item">
+	              <a class="nav-link" href="#about" data-to="#about">About</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#portfolio" data-to="#portfolio">Portfolio</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#contact" data-to="#contact">Contact</a>
+	            </li>
+	        
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
 	</header>
+
 	<section id="portfolio">
 		<div class="container">
 			<h3>Claire Stark</h3>
 			<div class="portfolio-header">
 				<h4>Web Design Portfolio</h4>
 			</div>
-			<div class="row">
+		    <div id="light-slider" class="carousel slide">
+		      	<div id="carousel-area">
+			        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+			        
+				        <div class="carousel-inner" role="listbox">
 
-				<div class="portfolio-item great-barrier col-4">
-					<h4><a href="#" data-toggle="modal" data-target="#great-barrier-modal">Great Barrier Reef</a></h4>
-						<div class="modal" id="great-barrier-modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-						      		<div class="modal-header">
-						        		<h5 class="modal-title">Great Barrier Reef</h5>
-						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          			<span aria-hidden="true">&times;</span>
-						        		</button>
-						      		</div>
-						      	<div class="modal-body">
-						        	<p>This was a project we worked on whilst learning D3 and SVG.</p>
-						        	<p>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</p>
-						      	</div>
-						      	<div class="modal-footer">
-	        						<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/greatbarrierproject/index.html">Go to site</a></button>
-	        					</div>
-	      						</div>
-						    </div>
-						</div>
-				</div>
-				
-				<div class="portfolio-item body-arts col-4">
-					<h4><a href="#" data-toggle="modal" data-target="#bodyarts-modal">NZBAA</a></h4>
-					<div class="modal" id="bodyarts-modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-						      		<div class="modal-header">
-						        		<h5 class="modal-title">NZ Body Art Awards</h5>
-						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          			<span aria-hidden="true">&times;</span>
-						        		</button>
-						      		</div>
-						      	<div class="modal-body">
-						        	<p>This was a project we worked on whilst learning parallaxing and continuous scrolling.</p>
-						        	<p>I chose to use the NZBAA as my content for this project as I have participated in the awards several times, and also the images made great content.</p>
-						      	</div>
-						      	 <div class="modal-footer">
-	        						<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/NZBAA/index.html">Go to site</a></button>
-	        					</div>
-	      						</div>
-						    </div>
-					</div>
-				</div>
+				            <div class="carousel-item active">
+				              	<div class="img1"></div>
+				              	
+				            </div>
 
-				<div class="portfolio-item behance-project col-4">
-					<h4><a href="#" data-toggle="modal" data-target="#behance-modal">Behance</a></h4>
-					<div class="modal" id="behance-modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-						      		<div class="modal-header">
-						        		<h5 class="modal-title">Behance</h5>
-						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          			<span aria-hidden="true">&times;</span>
-						        		</button>
-						      		</div>
-						      	<div class="modal-body">
-						        	<p>This was a group project that I worked on with 2 other class mates. We each created our own pages, and also worked as a team to create a section each for the landing page.</p>
-						        	<p>I created my own Behance account to pull the images from, as I couldn't find any that I really like everything that was on others pages.</p>
-						      	</div>
-						      	 <div class="modal-footer">
-	        						<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/behance/index.htm">Go to site</a></button>
-	      						</div>
-						    </div>
-					</div>
-				</div>
+				            <div class="carousel-item">
+					            <div class="img2"></div>
+					            
+				            </div>
+
+				            <div class="carousel-item">
+				              	<div class="img3"></div>
+				              	
+				            </div>
+				        </div>
+			          	<a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+			            	<span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
+			            	<span class="sr-only">Previous</span>
+			          	</a>
+			          	<a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+			            	<span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
+			            	<span class="sr-only">Next</span>
+			          	</a>
+			        </div>
+		      	</div>
+		    </div>
+
+		    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+			        <div class="row">
+			        	<div class="col-xs-offset-3 col-xs-6">
+			        		<div class="carousel-inner">
+
+					            <div class=item active">
+					              	<div class="carousel-content">
+						                <h3 class="slide-title animated fadeInDown">Great Barrier Reef</h3>
+						                <h5 class="slide-text animated fadeIn">This was a project we worked on whilst learning D3 and SVG.
+						                <span>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</span></h5>
+						                <a href="http://clairestark.co.nz/greatbarrierproject/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+					              </div>
+					            </div>
+
+					            <div class="item">
+						            <div class="carousel-content">
+						                <h3 class="slide-title animated fadeInDown">NZ Body Art Awards</h3>
+						                <h5 class="slide-text animated fadeIn">This was a project we worked on whilst learning parallaxing and continuous scrolling.
+						                <span>I chose to use the NZBAA as my content for this project as I have participated in the awards several times, and also the images made great content.</span></h5>
+						                <a href="http://clairestark.co.nz/NZBAA/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+						            </div>
+					            </div>
+
+					            <div class="item">
+					              	<div class="carousel-content">
+						                <h3 class="slide-title animated fadeInDown">Behance</h3>
+						                <h5 class="slide-text animated fadeIn">This was a group project that I worked on with 2 other class mates. We each created our own pages, and also worked as a team to create a section each for the landing page.<span>I created my own Behance account to pull the images from, as I couldn't find any that I really like everything that was on others pages.</span></h5>
+										        	
+						                <a href="http://clairestark.co.nz/behance/index.htm" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+					              	</div>
+					            </div>
+					        </div>
+			        	</div>	
+			        </div>
+
+			          	<a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+			            	<span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
+			            	<span class="sr-only">Previous</span>
+			          	</a>
+			          	<a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+			            	<span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
+			            	<span class="sr-only">Next</span>
+			          	</a>
 			</div>
 		</div>
 		
@@ -122,11 +152,11 @@
 			<div class="contact-header">
 				<h4>Contact</h4>
 			</div>
-			<div class="row col-12">
+			<div class="">
 				<div class="cv">
 					<p>You can download my CV <a href="images/Claire-Stark-CV.pdf"><strong>here</strong></a> to view my previous experience</p>
 				</div>
-				<div class="contact-details col-12">
+				<div class="contact-details">
 					<div class="email">
 						<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i> Email: claireu@ymail.com</a>
 					</div>
@@ -140,37 +170,39 @@
 	</section>
 
 	<footer>
-		<div class="row">
-			<div class="navbar col-6">
-				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a href="#" class="nav-link active" data-to="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link" data-to="#portfolio">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link" data-to="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
+		<div class="container">
+			<div class="row">
 
-			<div class="social col-6">
-				<div class="linkedin">
-					<a href="https://www.linkedin.com/in/claire-stark-5449a4b3/"><i class="fab fa-linkedin"></i></a>
+				<div class="navbar col-6">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a href="#" class="nav-link active" data-to="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-to="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-to="#contact">Contact</a>
+						</li>
+					</ul>
 				</div>
-				<div class="github">
-					<a href="https://github.com/CrimsonGracie"><i class="fab fa-github-square"></i></a>
-				</div>
-				<div class="email">
-					<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i></a>
-				</div>
-				<div class="phone">
-					<a href="tel:+64212406888"><i class="fas fa-phone-square"></i></a>
+
+				<div class="social col-6">
+					<div class="linkedin">
+						<a href="https://www.linkedin.com/in/claire-stark-5449a4b3/"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="github">
+						<a href="https://github.com/CrimsonGracie"><i class="fab fa-github-square"></i></a>
+					</div>
+					<div class="email">
+						<a href="mailto:claireu@ymail.com"><i class="fas fa-envelope-square"></i></a>
+					</div>
+					<div class="phone">
+						<a href="tel:+64212406888"><i class="fas fa-phone-square"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
-		
 	</footer>
 
 
@@ -180,6 +212,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/anime.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 #index {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-color: $backgroundcolor;
 	text-align: center;
@@ -28,21 +28,30 @@ header {
 	background-color: $divbackgroundcolor;
 	margin: auto;
 
-	.navbar {
-		margin: auto;
-		display: flex;
-		justify-content: space-around;
-
-		a {
-			color: $bodyfontcolor;
-		}
-		a:hover{
-			color:$headerfontcolor;
-		}
+	.fa-gem {
+		padding-right: 1em;
 	}
 
-	.nav-item {
-		margin: auto;
+	#navbar4 {
+
+		.navbar-nav{
+
+			.nav-item{
+
+				.nav-link{
+					a {
+						color: $bodyfontcolor !important; 
+						border: thin red solid;
+					}
+					a:hover{
+						color:$headerfontcolor !important;
+					}
+				}
+
+
+			}
+		}
+		
 	}
 	
 }
@@ -53,71 +62,57 @@ header {
 	.portfolio-header {
 		border-bottom: thick $divbackgroundcolor solid;
 	}
+	
 
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+	.carousel-inner {
+		height: 100vh;
 	}
-	.portfolio-item {
-		border: thick $bodyfontcolor solid;
-		box-sizing: border-box;
-	}
-
-	.portfolio-item:hover {
-		border: thick $divbackgroundcolor solid;
-		box-sizing: border-box;
+	
+	.carousel-item {
+		height: 100%;
 	}
 
-	.great-barrier {
-		flex: 0 0 auto;
-		background-image: url('../images/great-barrier.jpg');
-		background-size: cover;
-		background-position: center;
-		height: 15em;
-		width: 15em;
-
-		h4 a{
-			color: $headerfontcolor;
-			text-decoration: none;
-		}
-
+	.img1 {
+		background-image: url('../images/great-barrier2.jpg');
+	    height: 100%;
+	    width: 100%;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed !important;
+	    background-size: cover !important;   
+	    background-position: center !important;
 	}
-	.body-arts {
-		flex: 1 0 auto;
+
+	.img2 {
 		background-image: url('../images/Creature2.jpg');
-		background-size: cover;
-		background-position: center;
-		height: 15em;
-		width: 15em;
-
-		h4 a{
-			color: $headerfontcolor;
-			text-decoration: none;
-		}
+	    height: 100%;
+	    width: 100%;
+	    background-repeat: no-repeat;
+	    // background-attachment: fixed !important;
+	    background-size: cover !important;   
+	    background-position: center !important;
+	
+	}
+	.img3 {
+		background-image: url('../images/behance2.jpg');
+	    height: 100%;
+	    width: 100%;
+	    background-repeat: no-repeat;
+	    // background-attachment: fixed !important;
+	    background-size: cover !important;   
+	    background-position: center !important;
+	
 	}
 
-	.behance-project {
-		flex: 0 0 auto;
-		background-image: url('../images/behance.jpg');
-		background-size: cover;
-		background-position: center;
-		height: 15em;
-		width: 15em;
-
-		h4 a{
-			color: $headerfontcolor;
-			text-decoration: none;
-		}
+	.carousel-content {
+	    color:black;
+	    display:flex;
+	    align-items:center;
 	}
 
-	.modal {
-		border: #bf9be2 thin solid;
-
-		.modal-title h5{
-			color: $headerfontcolor;
-			text-align: center;
-		}
+	#text-carousel {
+	  width: 100%;
+	  height: auto;
+	  padding: 50px;
 	}
 }
 
