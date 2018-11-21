@@ -32,27 +32,7 @@ header {
 		padding-right: 1em;
 	}
 
-	#navbar4 {
-
-		.navbar-nav{
-
-			.nav-item{
-
-				.nav-link{
-					a {
-						color: $bodyfontcolor !important; 
-						border: thin red solid;
-					}
-					a:hover{
-						color:$headerfontcolor !important;
-					}
-				}
-
-
-			}
-		}
-		
-	}
+	
 	
 }
 
@@ -64,56 +44,52 @@ header {
 	}
 	
 
-	.carousel-inner {
-		height: 100vh;
+	.carousel-img {
+		height: 60vh;
 	}
+
 	
 	.carousel-item {
 		height: 100%;
+
+		.slide-title {
+	    	color: white;
+	    	
+	    }
+
+	    a {
+			color: $bodyfontcolor !important; 
+		
+		}
+		a:hover{
+			color:$headerfontcolor !important;
+		}
 	}
 
-	.img1 {
-		background-image: url('../images/great-barrier2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	}
-
-	.img2 {
-		background-image: url('../images/Creature2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    // background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	
-	}
-	.img3 {
-		background-image: url('../images/behance2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    // background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	
-	}
 
 	.carousel-content {
-	    color:black;
-	    display:flex;
-	    align-items:center;
+
+	    color: $bodyfontcolor;
+    
 	}
 
-	#text-carousel {
-	  width: 100%;
-	  height: auto;
-	  padding: 50px;
+	
+
+	.btn-default-filled, .btn-common {
+	  	border-radius: 0.25em;
+	  	background-color: $divbackgroundcolor;
 	}
+
+	.btn-common {
+
+		color: $bodyfontcolor !important; 
+		
+
+		.btn-common:hover{
+			color:$headerfontcolor !important;
+		}
+	}
+
 }
 
 #about {

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Claire Stark</title>
+	<title>Claire Stark Portfolio</title>
 </head>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -45,7 +45,7 @@
 
 	<section id="portfolio">
 		<div class="container">
-			<h3>Claire Stark</h3>
+			<h2>Claire Stark</h2>
 			<div class="portfolio-header">
 				<h4>Web Design Portfolio</h4>
 			</div>
@@ -53,20 +53,39 @@
 		      	<div id="carousel-area">
 			        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
 			        
-				        <div class="carousel-inner" role="listbox">
+				        <div class="carousel-inner carousel-img" role="listbox">
 
-				            <div class="carousel-item active">
-				              	<div class="img1"></div>
-				              	
-				            </div>
+				              	<div class="carousel-item active">
+					              	<img src="images/great-barrier2.jpg" alt="">
+					              	<div class="carousel-caption">
+					                	<h3 class="slide-title animated fadeInDown">Great Barrier Reef</h3>
+					                	<a href="http://clairestark.co.nz/greatbarrierproject/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+					                	<button type="button" data-toggle="modal" data-target="#great-barrier-modal" class="btn btn-lg btn-common animated fadeInUp">Learn More</button>
+					                	
+			 						</div>
+					            </div>
 
 				            <div class="carousel-item">
-					            <div class="img2"></div>
+					            <img src="images/Creature2.jpg" alt="">
+					              	<div class="carousel-caption">
+					                	<h3 class="slide-title animated fadeInDown">NZ Body Art Awards</h3>
+					                	<a href="http://clairestark.co.nz/NZBAA/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+					                	<button type="button" data-toggle="modal" data-target="#bodyarts-modal" class="btn btn-lg btn-common animated fadeInUp">Learn More</button>
+					                	
+			 						</div>
 					            
 				            </div>
 
 				            <div class="carousel-item">
-				              	<div class="img3"></div>
+				              	<img src="images/behance2.jpg" alt="">
+					              	<div class="carousel-caption">
+					                	<h3 class="slide-title animated fadeInDown">Behance</h3>
+					                	
+					                	<a href="http://clairestark.co.nz/behance/index.htm" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
+					                	<button type="button" data-toggle="modal" data-target="#behance-modal" class="btn btn-lg btn-common animated fadeInUp">Learn More</button>
+					                	
+			 						</div>
+
 				              	
 				            </div>
 				        </div>
@@ -82,53 +101,9 @@
 		      	</div>
 		    </div>
 
-		    <div id="text-carousel" class="carousel slide" data-ride="carousel">
-			        <div class="row">
-			        	<div class="col-xs-offset-3 col-xs-6">
-			        		<div class="carousel-inner">
-
-					            <div class=item active">
-					              	<div class="carousel-content">
-						                <h3 class="slide-title animated fadeInDown">Great Barrier Reef</h3>
-						                <h5 class="slide-text animated fadeIn">This was a project we worked on whilst learning D3 and SVG.
-						                <span>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</span></h5>
-						                <a href="http://clairestark.co.nz/greatbarrierproject/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
-					              </div>
-					            </div>
-
-					            <div class="item">
-						            <div class="carousel-content">
-						                <h3 class="slide-title animated fadeInDown">NZ Body Art Awards</h3>
-						                <h5 class="slide-text animated fadeIn">This was a project we worked on whilst learning parallaxing and continuous scrolling.
-						                <span>I chose to use the NZBAA as my content for this project as I have participated in the awards several times, and also the images made great content.</span></h5>
-						                <a href="http://clairestark.co.nz/NZBAA/index.html" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
-						            </div>
-					            </div>
-
-					            <div class="item">
-					              	<div class="carousel-content">
-						                <h3 class="slide-title animated fadeInDown">Behance</h3>
-						                <h5 class="slide-text animated fadeIn">This was a group project that I worked on with 2 other class mates. We each created our own pages, and also worked as a team to create a section each for the landing page.<span>I created my own Behance account to pull the images from, as I couldn't find any that I really like everything that was on others pages.</span></h5>
-										        	
-						                <a href="http://clairestark.co.nz/behance/index.htm" class="btn btn-lg btn-default-filled animated fadeInUp">View Site</a>
-					              	</div>
-					            </div>
-					        </div>
-			        	</div>	
-			        </div>
-
-			          	<a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
-			            	<span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
-			            	<span class="sr-only">Previous</span>
-			          	</a>
-			          	<a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
-			            	<span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
-			            	<span class="sr-only">Next</span>
-			          	</a>
-			</div>
-		</div>
-		
 	</section>
+
+
 	<section id="about">
 		<div class="container">
 			<div class="about-header">
@@ -205,7 +180,64 @@
 		</div>
 	</footer>
 
+<!-- Modals -->
+	<div class="modal" id="great-barrier-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">Great Barrier Reef</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      	<div class="modal-body">
+	        	<p>This was a project we worked on whilst learning D3 and SVG.</p>
+	        	<p>We were asked to choose something we were passionate about and as a diver - I am extremely concerned about the state of our oceans</p>
+	      	</div>
+	      	<div class="modal-footer">
+				<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/greatbarrierproject/index.html">Go to site</a></button>
+			</div>
+			</div>
+    </div>
 
+	<div class="modal" id="bodyarts-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">NZ Body Art Awards</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      	<div class="modal-body">
+	        	<p>This was a project we worked on whilst learning parallaxing and continuous scrolling.</p>
+				<p>I chose to use the NZBAA as my content for this project as I have participated in the awards several times, and also the images made great content.</p>
+	      	</div>
+	      	<div class="modal-footer">
+				<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/NZBAA/index.html">Go to site</a></button>
+			</div>
+			</div>
+	</div>
+
+	<div class="modal" id="behance-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">Behance</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      	<div class="modal-body">
+	        	<p>This was a group project that I worked on with 2 other class mates. We each created our own pages, and also worked as a team to create a section each for the landing page.</p>
+				<p>I created my own Behance account to pull the images from, as I couldn't find any that I really like everything that was on others pages.</p>
+
+	      	</div>
+	      	<div class="modal-footer">
+				<button type="button" class="btn btn-link"><a href="http://clairestark.co.nz/behance/index.htm">Go to site</a></button>
+			</div>
+			</div>
+    </div>
 
 
 
