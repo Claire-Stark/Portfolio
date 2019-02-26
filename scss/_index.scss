@@ -28,97 +28,83 @@ header {
 	background-color: $divbackgroundcolor;
 	margin: auto;
 
-	.fa-gem {
-		padding-right: 1em;
-	}
+}
 
-	
-	
+#landing-page { 
+	color: #373741; 
+	.typed-wrap { 
+		display: block; 
+		text-align: center; 
+		width: auto; 
+		height: auto; 
+		font-size: 3em; /*centers it in the .banner*/ 
+		position: absolute; 
+		top: 50%; 
+		left: 50%; 
+		-webkit-transform: translate(-50%, -50%); 
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%); 
+		h1 { 
+			display: inline; 
+			margin: auto; 
+		}
+	}
+	.typed::after { 
+		content: '|'; 
+		display: inline; 
+		-webkit-animation: blink 0.7s infinite; 
+		animation: blink 0.7s infinite; 
+	}
+	.typed-cursor { 
+		opacity: 0; 
+		display: none; 
+	}
+	@keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	} 
 }
 
 #portfolio {
 	text-align: center;
-
 	.portfolio-header {
-		border-bottom: thick $divbackgroundcolor solid;
+		border-bottom: thick #e5d6f3 solid; 
 	}
-	
-
-	.carousel-img {
-		height: 60vh;
-	}
-
-	
-	.carousel-item {
-		height: 100%;
-
-		.slide-title {
-	    	color: white;
-	    	
-	    }
-
-	    a {
-			color: $bodyfontcolor !important; 
-		
-		}
-		a:hover{
-			color:$headerfontcolor !important;
+	.project { 
+		background-color: #e5d6f3; 
+		color: #373741; 
+		a{ 
+			color: #373741; 
 		}
 	}
-
-
-	.carousel-content {
-
-	    color: $bodyfontcolor;
-    
-	}
-	.img1{
-		background-image: url('../images/great-barrier2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	}
-
-	.img2{
-		background-image: url('../images/Creature2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	}
-
-	.img3{
-		background-image: url('../images/behance2.jpg');
-	    height: 100%;
-	    width: 100%;
-	    background-repeat: no-repeat;
-	    background-attachment: fixed !important;
-	    background-size: cover !important;   
-	    background-position: center !important;
-	}
-		
-	
 
 	.btn-default-filled, .btn-common {
-	  	border-radius: 0.25em;
-	  	background-color: $divbackgroundcolor;
+		border-radius: 0.25em;
+		background-color: #e5d6f3;
 	}
 
 	.btn-common {
 
-		color: $bodyfontcolor !important; 
+		color: #373741 !important; 
 		
 
 		.btn-common:hover{
-			color:$headerfontcolor !important;
+			color:#bf9be2 !important;
 		}
 	}
-
 }
 
 #about {
